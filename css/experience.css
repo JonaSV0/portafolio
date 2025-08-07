@@ -1,0 +1,100 @@
+.experience-item, .education-item {
+    background: rgba(15, 23, 42, 0.8);
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 25px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    border-left: 5px solid #3b82f6;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(59, 130, 246, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.experience-item::before, .education-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        radial-gradient(circle at 90% 10%, rgba(139, 92, 246, 0.03) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+.experience-item:hover, .education-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 16px 48px rgba(59, 130, 246, 0.2);
+    border-left: 5px solid #8b5cf6;
+    border: 1px solid rgba(139, 92, 246, 0.3);
+}
+
+.job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.job-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #e1e8ff;
+    margin-bottom: 5px;
+    background: linear-gradient(135deg, #e1e8ff, #94a3b8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.company {
+    font-size: 1.1rem;
+    color: #3b82f6;
+    font-weight: 600;
+}
+
+.date-location {
+    text-align: right;
+    color: #94a3b8;
+    font-size: 0.9rem;
+}
+
+.job-description {
+    color: #cbd5e1;
+    line-height: 1.7;
+}
+
+.job-description ul {
+    padding-left: 20px;
+    margin-top: 15px;
+}
+
+.job-description li {
+    margin-bottom: 8px;
+    position: relative;
+}
+
+.job-description li::marker {
+    color: #3b82f6;
+}
+
+.job-description strong {
+    color: #e1e8ff;
+    font-weight: 600;
+}
+
+/* Responsive para Experience */
+@media (max-width: 768px) {
+    .job-header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .date-location {
+        text-align: left;
+    }
+}
