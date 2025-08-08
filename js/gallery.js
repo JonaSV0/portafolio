@@ -42,7 +42,7 @@ const projectsData = {
     },
     'cochera-inteligente': {
         title: 'Sistema de Cochera Inteligente',
-        description: 'Plataforma inteligente con asignación automática de espacios de estacionamiento. Desarrollada en Django Rest, opera offline.',
+        description: 'Plataforma inteligente de cochera desarrollada en Django Rest, opera offline.',
         technologies: ['Django Rest', 'Python', 'Algoritmos de Optimización', 'SQLite', 'JavaScript'],
         images: [
             { src: 'imagenes/proyectos/cochera-inteligente/login.jpg', caption: 'Login', description: 'Vista de Login' },
@@ -62,17 +62,6 @@ const projectsData = {
             { src: 'imagenes/proyectos/sistema-facturacion/api-integracion.jpg', caption: 'API de Integración', description: 'Panel de gestión de APIs y conectores externos' }
         ]
     },
-    'mainframe-cobol': {
-        title: 'Desarrollo en Mainframe COBOL',
-        description: 'Desarrollo y mantenimiento de programas críticos en entorno mainframe z/OS. Trabajo con COBOL, DB2, JCL, y herramientas especializadas como TSO/ISPF, ENDEVOR y Control-M para sistemas de misión crítica.',
-        technologies: ['COBOL', 'DB2', 'JCL', 'TSO/ISPF', 'ENDEVOR', 'Control-M', 'VSAM'],
-        images: [
-            { src: 'imagenes/proyectos/mainframe-cobol/tso-ispf.jpg', caption: 'Entorno TSO/ISPF', description: 'Interfaz principal de desarrollo en mainframe' },
-            { src: 'imagenes/proyectos/mainframe-cobol/cobol-code.jpg', caption: 'Código COBOL', description: 'Programas COBOL para procesamiento de transacciones' },
-            { src: 'imagenes/proyectos/mainframe-cobol/db2-queries.jpg', caption: 'Consultas DB2', description: 'Optimización de consultas en base de datos DB2' },
-            { src: 'imagenes/proyectos/mainframe-cobol/control-m.jpg', caption: 'Control-M Jobs', description: 'Monitoreo y programación de trabajos batch' }
-        ]
-    }
 };
 
 // Clase principal de la galería
