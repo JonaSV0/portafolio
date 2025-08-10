@@ -12,11 +12,11 @@ const projectsData = {
     'sistema-sos': {
         title: 'Sistema SOS y Monitoreo Vehicular',
         description: 'Plataforma escalable de alertas SOS integrada con monitoreo vehicular en tiempo real. Arquitectura modular desarrollada en Django Rest y Node.js que garantiza alta disponibilidad y respuesta inmediata ante emergencias.',
-        technologies: ['Django Rest', 'Node.js', 'WebSockets', 'PostgreSQL', 'Redis', 'API REST'],
+        technologies: ['Django Rest', 'Node.js', 'WebSockets', 'PostgreSQL', 'API REST'],
         images: [
-            { src: 'imagenes/proyectos/sistema-sos/monitoreo.jpg', caption: 'Centro de Monitoreo', description: 'Dashboard de monitoreo en tiempo real de la flota' },
-            { src: 'imagenes/proyectos/sistema-sos/alertas.jpg', caption: 'Sistema de Alertas', description: 'Panel de gestión de alertas SOS y emergencias' },
-            { src: 'imagenes/proyectos/sistema-sos/mapa.jpg', caption: 'Vista de Mapa', description: 'Geolocalización en tiempo real de todos los vehículos' },
+            { src: 'imagenes/proyectos/sistema-sos/sosalert.png', caption: 'Centro de Monitoreo', description: 'Aplicacion Sos con boton de panico - alerta activa' },
+            { src: 'imagenes/proyectos/sistema-sos/numberemergency.png', caption: 'Numeros de Emergencia', description: 'Numeros de emergencia guardados en el dispositivo, se actualizan si hay conexion a internet' },
+            { src: 'imagenes/proyectos/sistema-sos/adminsos.png', caption: 'Seguimiento movil', description: 'Obtienes la informacion del incidente en tiempo real asi como la informacion del que envio la alerta' },
             { src: 'imagenes/proyectos/sistema-sos/historial.jpg', caption: 'Historial de Rutas', description: 'Seguimiento histórico y análisis de rutas' }
         ]
     },
@@ -49,17 +49,6 @@ const projectsData = {
             { src: 'imagenes/proyectos/cochera-inteligente/dashboard.jpg', caption: 'Dashboard', description: 'Vista de vehiculos totales, parkeados y parkeados el dia de hoy' },
             { src: 'imagenes/proyectos/cochera-inteligente/tickets.jpg', caption: 'Sistema de Tickets', description: 'Generación automática de tickets con códigos QR/Barras' },
             { src: 'imagenes/proyectos/cochera-inteligente/boletas.jpg', caption: 'Boletas', description: 'Informacion de horas de parkeo, tipo de vehiculo, boletas...' }
-        ]
-    },
-    'sistema-facturacion': {
-        title: 'Sistema de Facturación y Monitoreo',
-        description: 'Plataforma completa de facturación desarrollada con Angular y Django Rest. Incluye monitoreo en tiempo real, automatización de procesos de billing y optimización que redujo significativamente los costos logísticos.',
-        technologies: ['Angular', 'Django Rest', 'PostgreSQL', 'Redis', 'Celery', 'API REST'],
-        images: [
-            { src: 'imagenes/proyectos/sistema-facturacion/facturacion.jpg', caption: 'Módulo de Facturación', description: 'Interfaz principal de generación de facturas' },
-            { src: 'imagenes/proyectos/sistema-facturacion/monitoreo-tiempo-real.jpg', caption: 'Monitoreo en Tiempo Real', description: 'Dashboard con métricas en vivo del sistema' },
-            { src: 'imagenes/proyectos/sistema-facturacion/reportes-financieros.jpg', caption: 'Reportes Financieros', description: 'Análisis detallado de ingresos y costos' },
-            { src: 'imagenes/proyectos/sistema-facturacion/api-integracion.jpg', caption: 'API de Integración', description: 'Panel de gestión de APIs y conectores externos' }
         ]
     },
 };
