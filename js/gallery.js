@@ -21,16 +21,14 @@ const projectsData = {
         ]
     },
     'app-android': {
-        title: 'Aplicación Android para Gestión de Flotas',
-        description: 'Aplicación móvil nativa desarrollada en Java para gestión integral de flotas vehiculares. Incluye seguimiento GPS en tiempo real, sistema de alertas SOS, comunicación bidireccional y reportes de actividad.',
-        technologies: ['Android', 'Java', 'GPS', 'Firebase', 'Google Maps API', 'SQLite'],
+        title: 'Aplicación Android para Control GPS Vehicular',
+        description: 'Aplicación móvil nativa desarrollada en Java para control y monitoreo integral de vehículos. Permite obtener información completa del GPS, bloqueo/desbloqueo de puertas, apagado remoto de motocicletas y seguimiento en tiempo real. Diseñada para funcionar offline cuando la conexión móvil es inestable, garantizando operatividad continua.',
+        technologies: ['Android', 'Java', 'GPS', 'Firebase', 'Google Maps API', 'SQLite', 'Modo Offline'],
         images: [
-            { src: 'imagenes/proyectos/app-android/login.jpg', caption: 'Pantalla de Login', description: 'Autenticación segura con biometría' },
-            { src: 'imagenes/proyectos/app-android/dashboard.jpg', caption: 'Dashboard Principal', description: 'Vista general de la flota y alertas activas' },
-            { src: 'imagenes/proyectos/app-android/mapa-movil.jpg', caption: 'Mapa Interactivo', description: 'Seguimiento GPS en tiempo real desde móvil' },
-            { src: 'imagenes/proyectos/app-android/boton-sos.jpg', caption: 'Botón de Pánico', description: 'Interfaz de emergencia para alertas SOS' }
+            { src: 'imagenes/proyectos/app-android/logininterfaz.png', caption: 'Pantalla de Login y lista de vehiculos', description: 'Inicio de sesion y lista de vehiculos' },
+            { src: 'imagenes/proyectos/app-android/maps.png', caption: 'Control de GPS y Ubucacion', description: 'Control centralizado de vehículos y Ubicacion' },
         ]
-    },
+        },
     'reconocimiento-facial': {
         title: 'Sistema de Reconocimiento Facial',
         description: 'Sistema avanzado de autenticación biométrica desarrollado en Python utilizando computer vision. Implementa algoritmos de deep learning para reconocimiento facial preciso y seguro, mejorando la seguridad empresarial.',

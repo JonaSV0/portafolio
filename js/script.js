@@ -61,20 +61,43 @@ function initAnimations() {
 // Función para manejar imágenes de proyectos
 function initProjectImages() {
     const projectImages = document.querySelectorAll('.project-img');
+    
     projectImages.forEach(img => {
-        img.style.display = 'none'; // Ocultar hasta que agregues las imágenes reales
-        
-        // Evento para mostrar imagen cuando se carga
-        img.addEventListener('load', function() {
-            this.style.display = 'block';
-            this.nextElementSibling.style.display = 'none'; // Ocultar placeholder
-        });
-        
-        // Evento para manejar errores de carga
-        img.addEventListener('error', function() {
-            this.style.display = 'none';
-            this.nextElementSibling.style.display = 'flex'; // Mostrar placeholder
-        });
+        // Verificar si la imagen ya está cargada
+        if (img.complete && img.naturalWidth > 0) {
+            // La imagen ya está cargada
+            img.style.display = 'block';
+            const placeholder = img.nextElementSibling;
+            if (placeholder) {
+                placeholder.style.display = 'none';
+            }
+        } else {
+            // La imagen no está cargada, ocultarla y mostrar placeholder
+            img.style.display = 'none';
+            const placeholder = img.nextElementSibling;
+            if (placeholder) {
+                placeholder.style.display = 'flex';
+            }
+            
+            // Event listener para cuando la imagen se carga exitosamente
+            img.addEventListener('load', function() {
+                this.style.display = 'block';
+                const placeholder = this.nextElementSibling;
+                if (placeholder) {
+                    placeholder.style.display = 'none';
+                }
+            });
+            
+            // Event listener para manejar errores de carga
+            img.addEventListener('error', function() {
+                console.error('Error cargando imagen:', this.src);
+                this.style.display = 'none';
+                const placeholder = this.nextElementSibling;
+                if (placeholder) {
+                    placeholder.style.display = 'flex';
+                }
+            });
+        }
     });
 }
 
